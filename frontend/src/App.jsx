@@ -11,6 +11,9 @@ function App() {
     <Register />
 {/* gfdgfdgdfgfdgfdg */}
 
+
+{/* kfdg'ldfgfdgfd */}
+
     <Home />
     </>
   )
