@@ -1,22 +1,21 @@
-
-import './App.css'
-import Register from './Register'
-import Home from "./Home"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Navbar from "./pages/Header";
 
 function App() {
-
-
   return (
-    <>
-    <Register />
-{/* gfdgfdgdfgfdgfdg */}
+    <BrowserRouter>
+      <Navbar />  
 
-
-{/* kfdg'ldfgfdgfd */}
-
-    <Home />
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
